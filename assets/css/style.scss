@@ -1,0 +1,291 @@
+$color: #e1702a;
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+    line-height: 1.4;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+}
+#navbar{
+    border-right: 3px solid $color;
+    height: 100vh;
+    position: fixed;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 100;
+    img{
+        width: 200px;
+        height: 100px;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        li{
+            padding: 10px 0px;
+            a{
+                text-decoration: none;
+                color: #fff;
+                font-size: 28px;
+                font-weight: 700;
+            }
+            &:hover,&.active{
+                a{
+                    color: $color;
+                }
+            }
+        }
+    }
+}
+#pagecontent{
+    width: 80%;
+    margin-left: 20%;
+    .fullpage{
+        height: 100vh;
+    }
+    #home,#about,#service,#contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    #home{
+        background: url('https://dummyimage.com/900x900.png');
+        background-size: cover;
+        background-position: center;
+        img{
+            width: 300px;
+            height: 150px;
+        }
+        h1{
+            font-size: 65px;
+            margin: 0;
+        }
+        h2{
+            margin: 0;
+            font-size: 46px;
+            letter-spacing: 16px;
+            margin-left: 16px;
+            color: $color;
+        }
+    }
+    #about{
+        background: url('https://dummyimage.com/900x900.png');
+        background-size: cover;
+        background-position: center;
+        justify-content: space-evenly;
+        padding: 10px 100px;
+        text-align: center;
+
+        .logo{
+            width: 200px;
+            height: 100px;
+        }
+        p{
+            font-weight: 700;
+            font-size: 22px;
+            margin-bottom: 0;
+        }
+        ul{
+            margin-top: 20px;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            li{
+                img{
+                    width: 100%;
+                    border-radius: 50%;
+                }
+                h3,h4{
+                    margin: 1px;
+                }
+                h3{
+                    font-size: 35px;
+                }
+                h4{
+                    font-size: 25px;
+                    color: $color;
+                }
+            }
+        }
+    }
+    #service{
+        background: url('https://dummyimage.com/900x900.png');
+        background-size: cover;
+        background-position: center;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        .big-service{
+            display: flex;
+            align-items: center;
+            margin-right: -100px;
+            .image{
+                -moz-transform: skew(-30deg, 0deg);
+                -webkit-transform: skew(-30deg, 0deg);
+                -o-transform: skew(-30deg, 0deg);
+                -ms-transform: skew(-30deg, 0deg);
+                transform: skew(-30deg, 0deg);
+                overflow: hidden;
+            }
+            .content{
+                display: flex;
+                align-items: center;
+                margin-right: -120px;
+                padding-right: 100px;
+                padding-top: 50px ;
+                padding-bottom: 60px ;
+                width: 500px;
+                height: 160px;;
+                background-color: #fff;
+                -moz-transform: skew(30deg, 0deg);
+                -webkit-transform: skew(30deg, 0deg);
+                -o-transform: skew(30deg, 0deg);
+                -ms-transform: skew(30deg, 0deg);
+                transform: skew(30deg, 0deg);
+                position: relative;
+                .text{
+                    -moz-transform: skew(-30deg, 0deg);
+                    -webkit-transform: skew(-30deg, 0deg);
+                    -o-transform: skew(-30deg, 0deg);
+                    -ms-transform: skew(-30deg, 0deg);
+                    transform: skew(-30deg, 0deg);
+                    padding: 0px 50px;
+                    text-align: center;
+                    h3{
+                        color: $color;
+                        font-weight: 700;
+                        font-size: 32px;
+                        margin: 0;
+                    }
+                    p{
+                        margin: 2px 0px 0px;
+                        color: #000;
+                        font-weight: 700;
+                    }
+                }
+                button{
+                    -moz-transform: rotate(90deg) translate(-12%, 0px);
+                    -webkit-transform: rotate(90deg) translate(-12%, 0px);
+                    -o-transform: rotate(90deg) translate(-12%, 0px);
+                    -ms-transform: rotate(90deg) translate(-12%, 0px);
+                    transform: rotate(90deg) translate(-12%, 0px);
+                    position: absolute;
+                    right: 0;
+                    left: -90px;
+                    top: 50%;
+                    width: 160px;
+                    border: 0;
+                    cursor: pointer;
+                    font-weight: 700;
+                    padding: 10px 0px;
+                    background: $color;                    
+                    a{
+                        color: #000;
+                        transform: skew(-30deg, 0deg);
+                        cursor: pointer;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    #contact{
+        background: url('https://dummyimage.com/900x900.png');
+        background-size: cover;
+        background-position: center;
+        justify-content: space-evenly;
+        position: relative;
+        .section-title{
+            font-size: 55px;
+            text-transform: capitalize;
+            span{
+                color: $color;
+            }
+        }
+        .multinput{
+            input{
+                background: transparent;
+                border: 2px solid #fff;
+                border-radius: 5px;
+                font-size: 22px;
+                padding: 8px 2px;
+                text-align: center;
+                color: #fff;
+                &:nth-of-type(2){
+                    margin-left: 6px;
+                    margin-right: 6px;
+                }
+                &::placeholder{
+                    color: #fff;
+                }
+            }
+        }
+        textarea{
+            background: rgba($color: #000000, $alpha: 0.5);
+            border: 2px solid #fff;
+            border-radius: 5px;
+            font-size: 22px;
+            display: block;
+            margin-top: 15px;  
+            width: 100%;
+            padding: 8px 10px;
+            resize: none;
+            color: #fff;
+            &::placeholder{
+                color: #fff;
+            }
+        }
+        button{
+            width: 100%;
+            margin-top: 15px;  
+            padding: 10px 0px;
+            font-weight: 700;
+            font-size: 22px;
+            color: #fff;
+            background: $color;
+            border: 0;
+            border-radius: 10px;
+        }
+        .info{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 30px;
+            right: -235px;
+            transition: all 1s ease-in-out;
+            .title,p{
+                margin: 0;
+            }
+            .content{
+                background: #000;
+                border-radius: 10px;
+                padding: 15px 50px 15px 15px;
+            }
+            p{
+                margin-bottom: 10px;
+                color: $color;
+                font-size: 18px;
+                font-weight: 700;
+                width: 170px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+            }
+            &:hover{
+                right: -24px;
+            }
+        }
+    }
+}
