@@ -1,15 +1,8 @@
-const itemNavbar = document.querySelectorAll('#navbar ul li a');
-
-function activeLink(e){
-    for(const el of e.target.parentElement.parentElement.children){
-        el.classList.remove('active');
-    }
-    e.target.parentElement.classList.add('active');
-}
-
-for(const el of itemNavbar){
-    el.addEventListener('click',activeLink);
-}
+$('#navbar ul li a').click(function (e) {
+    e.preventDefault();
+    $id = e.target.getAttribute('href')
+    $('html, body').animate({ scrollTop: ($($id).offset().top)},500);
+})
 
 // Jquery
 $('#pagecontent').fullpage();
