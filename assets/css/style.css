@@ -62,7 +62,7 @@ body {
   overflow: hidden;
 }
 #pagecontent #home {
-  background: url("https://dummyimage.com/900x900.png");
+  background: url("../img/bg1.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -82,7 +82,7 @@ body {
   color: #e1702a;
 }
 #pagecontent #about {
-  background: url("https://dummyimage.com/900x900.png");
+  background: url("../img/bg2.jpg");
   background-size: cover;
   background-position: center;
   justify-content: space-evenly;
@@ -121,7 +121,7 @@ body {
   color: #e1702a;
 }
 #pagecontent #service {
-  background: url("https://dummyimage.com/900x900.png");
+  background: url("../img/bg3.jpg");
   background-size: cover;
   background-position: center;
   justify-content: space-evenly;
@@ -201,7 +201,7 @@ body {
   text-decoration: none;
 }
 #pagecontent #contact {
-  background: url("https://dummyimage.com/900x900.png");
+  background: url("../img/bg4.jpg");
   background-size: cover;
   background-position: center;
   justify-content: space-evenly;

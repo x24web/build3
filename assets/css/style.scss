@@ -60,7 +60,7 @@ body{
         overflow: hidden;
     }
     #home{
-        background: url('https://dummyimage.com/900x900.png');
+        background: url('../img/bg1.jpg');
         background-size: cover;
         background-position: center;
         img{
@@ -80,7 +80,7 @@ body{
         }
     }
     #about{
-        background: url('https://dummyimage.com/900x900.png');
+        background: url('../img/bg2.jpg');
         background-size: cover;
         background-position: center;
         justify-content: space-evenly;
@@ -122,7 +122,7 @@ body{
         }
     }
     #service{
-        background: url('https://dummyimage.com/900x900.png');
+        background: url('../img/bg3.jpg');
         background-size: cover;
         background-position: center;
         justify-content: space-evenly;
@@ -202,7 +202,7 @@ body{
         }
     }
     #contact{
-        background: url('https://dummyimage.com/900x900.png');
+        background: url('../img/bg4.jpg');
         background-size: cover;
         background-position: center;
         justify-content: space-evenly;
