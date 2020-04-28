@@ -50,6 +50,8 @@ body {
 #pagecontent {
   width: 80%;
   margin-left: 20%;
+  height: 100vh;
+  overflow: hidden;
 }
 #pagecontent .fullpage {
   height: 100vh;

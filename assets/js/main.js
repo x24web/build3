@@ -1,7 +1,21 @@
 $('#navbar ul li a').click(function (e) {
     e.preventDefault();
-    $id = e.target.getAttribute('href')
-    $('html, body').animate({ scrollTop: ($($id).offset().top)},500);
+    $id = e.target.getAttribute('href');
+    var n;
+    if($id == '#home'){
+      n = 0;
+      console.log('A');
+    }else if($id == '#about'){
+      n = 100;
+      console.log('b');
+    }else if($id == '#service'){
+      n = 200;
+      console.log('c');
+    }else{
+      n = 300;
+      console.log('d');
+    }
+    $('#pagecontent > div').css({'height': '100vh','transition': 'all 0.7s ease 0s','transform': 'translateY(-'+n+'%)'})
 })
 
 // Jquery
